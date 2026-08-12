@@ -1,0 +1,125 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg-primary: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --text-primary: #1E293B;
+  --text-secondary: #64748B;
+  --border: #E2E8F0;
+  --primary-500: #3B82F6;
+  --primary-700: #1D4ED8;
+  --success: #288cc6 !important;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .thought-leadership-carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .thought-leadership-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Infinite Marquee Carousel Styles */
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(248, 250, 252, 0.5), rgba(255, 255, 255, 0.5), rgba(248, 250, 252, 0.5));
+  }
+
+  .carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: scroll-left linear infinite;
+    will-change: transform;
+
+    @apply sm:gap-6 md:gap-8;
+  }
+
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 280px;
+    
+    @apply sm:w-80 md:w-96;
+  }
+
+  .carousel-card {
+    @apply bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:border-primary-300 hover:shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary-100/50 h-full flex flex-col items-center justify-center text-center;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carousel-item {
+      width: 260px;
+    }
+
+    .carousel-track {
+      gap: 0.75rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .carousel-item {
+      width: 240px;
+    }
+
+    .carousel-track {
+      gap: 0.5rem;
+    }
+
+    .carousel-card {
+      @apply p-4;
+    }
+  }
+}
