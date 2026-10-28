@@ -15,7 +15,7 @@ const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
       company: 'Humana',
-      role: 'Senior Director, Product Management',
+      role: 'Enterprise Product Leader',
       period: 'May 2023 – Present',
       location: 'Tampa, FL',
       achievements: [

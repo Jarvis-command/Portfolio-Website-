@@ -4,6 +4,7 @@ import {
   Building2,
   FileText,
   Mic,
+  PlayCircle,
   UserCircle,
   Users,
   type LucideIcon
@@ -20,28 +21,44 @@ export interface LeadershipItem {
 
 export const leadershipItems: LeadershipItem[] = [
   {
-  icon: Mic,
-  title: 'AI Talent Strategy at Scale',
-  category: 'Closing Keynote Panel',
-  description: 'Joined leaders from Razorfish and Dell Technologies to discuss AI talent strategy, capability building, and operating models for enterprise AI success at the VISIONS Data Strategy & Analytics Forum.',
-  link: 'YOUR_LINK_HERE',
-  image: '/quartz.png'
+    icon: Mic,
+    title: 'CyberBay 2025 Podcast Feature',
+    category: 'Podcast Feature',
+    description: 'Featured on CyberBay Podcast discussing cybersecurity, technology, and innovation through an engaging conversation at CyberBay 2025.',
+    link: 'https://www.youtube.com/watch?v=Q7RpAgVaGl0&t=1378s',
+    image: '/CyberBay2.png',
   },
   {
-  icon: FileText,
-  title: 'Enterprise AI Systems & Real-Time Analytics',
-  category: 'CXO Dispatch Feature',
-  description: 'Featured by CXO Dispatch on building enterprise AI systems, leveraging real-time analytics, and enabling autonomous decision-making at scale.',
-  link: 'https://www.cxodispatch.com/strategy/gowtham-chilakapati-enterprise-ai-systems-real-time-analytics-for-autonomous-decisioning/',
-  image: '/cxo.png'
+    icon: PlayCircle,
+    title: 'Turning AI Investments into Measurable Business Outcomes',
+    category: 'HCLTech Feature',
+    description: 'Featured in an HCLTech conversation on moving AI from pilots to enterprise deployment, selecting high-value use cases, and turning AI investments into measurable business outcomes.',
+    link: 'https://www.hcltech.com/en-us/videos/turning-ai-investments-measurable-business-outcomes',
+    image: '/HCL.png'
   },
- {
-  icon: Mic,
-  title: 'AI That Moves the Needle',
-  category: 'Conference Session',
-  description: 'Shared practical strategies for prioritizing AI investments and measuring enterprise ROI to maximize business impact.',
-  link: 'https://www.ssonetwork.com/#/workshops',
-  image: '/sson-1.jpg'
+  {
+    icon: Mic,
+    title: 'AI Talent Strategy at Scale',
+    category: 'Closing Keynote Panel',
+    description: 'Joined leaders from Razorfish and Dell Technologies to discuss AI talent strategy, capability building, and operating models for enterprise AI success at the VISIONS Data Strategy & Analytics Forum.',
+    link: 'YOUR_LINK_HERE',
+    image: '/quartz.png'
+  },
+  {
+    icon: FileText,
+    title: 'Enterprise AI Systems & Real-Time Analytics',
+    category: 'CXO Dispatch Feature',
+    description: 'Featured by CXO Dispatch on building enterprise AI systems, leveraging real-time analytics, and enabling autonomous decision-making at scale.',
+    link: 'https://www.cxodispatch.com/strategy/gowtham-chilakapati-enterprise-ai-systems-real-time-analytics-for-autonomous-decisioning/',
+    image: '/cxo.png'
+  },
+  {
+    icon: Mic,
+    title: 'AI That Moves the Needle',
+    category: 'Conference Session',
+    description: 'Shared practical strategies for prioritizing AI investments and measuring enterprise ROI to maximize business impact.',
+    link: 'https://www.ssonetwork.com/#/workshops',
+    image: '/sson-1.jpg'
   },
   {
     icon: Mic,
