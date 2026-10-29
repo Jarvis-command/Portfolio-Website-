@@ -22,6 +22,14 @@ export interface LeadershipItem {
 export const leadershipItems: LeadershipItem[] = [
   {
     icon: Mic,
+    title: 'Where Are You Currently Leveraging AI',
+    category: 'HCLTech Interview',
+    description: 'Featured in an HCLTech conversation with Jitesh Jain on enterprise AI adoption, practical applications of artificial intelligence, and turning AI investments into measurable business outcomes.',
+    link: 'https://drive.google.com/file/d/1WHgsYbBUYUJovrlCfukou93Z2UcmmqGi/view?usp=sharing',
+    image: '/HCL2.png',
+  },
+  {
+    icon: Mic,
     title: 'CyberBay 2025 Podcast Feature',
     category: 'Podcast Feature',
     description: 'Featured on CyberBay Podcast discussing cybersecurity, technology, and innovation through an engaging conversation at CyberBay 2025.',
